@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Notebook.Models;
 using System.Diagnostics;
+using Notebook.ViewModels;
 
 namespace Notebook.Controllers
 {
