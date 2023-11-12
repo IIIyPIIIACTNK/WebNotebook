@@ -1,4 +1,4 @@
-namespace Notebook.Models
+namespace Notebook.ViewModels
 {
     public class ErrorViewModel
     {
