@@ -1,7 +1,10 @@
-﻿namespace Notebook.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Notebook.Models
 {
     public class Contact
     {
+        [Key]
         public string Id { get; set; }
         public string Surname { get; set; }
         public string Name { get; set; }

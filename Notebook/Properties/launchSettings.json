@@ -1,4 +1,7 @@
 ﻿{
+  "ConnectionString": {
+    "DefaultConnection": "Host:localhost;Port=5432;Database=notebookdb;Username=postgres;Password=postgres"
+  },
   "iisSettings": {
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
