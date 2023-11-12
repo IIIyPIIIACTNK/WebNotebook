@@ -4,6 +4,6 @@ namespace Notebook.Interfaces
 {
     public interface IContactRepository
     {
-        public Task<List<Contact>> GetAll();
+        public Task<IEnumerable<Contact>> GetAll();
     }
 }

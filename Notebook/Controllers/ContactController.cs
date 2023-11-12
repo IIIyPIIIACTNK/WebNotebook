@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Notebook.Interfaces;
+using Notebook.Models;
 using Notebook.Repositories;
 using Notebook.Seed;
 
@@ -12,9 +13,9 @@ namespace Notebook.Controllers
         {
             _repository= contactRepository;
         }
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View(_repository.GetAll());
+            return View(await _repository.GetAll());
         }
 
         public async Task<IActionResult> Detail(string id)

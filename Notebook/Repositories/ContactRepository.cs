@@ -13,9 +13,9 @@ namespace Notebook.Repositories
             _dbContext= dbContext;
         }
 
-        public Task<List<Contact>> GetAll()
+        public async Task<IEnumerable<Contact>> GetAll()
         {
-            return _dbContext.Contacts.ToListAsync();
+            return await _dbContext.Contacts.ToListAsync();
         }
     }
 }
