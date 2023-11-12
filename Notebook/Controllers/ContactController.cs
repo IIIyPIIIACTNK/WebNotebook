@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Notebook.Seed;
 
 namespace Notebook.Controllers
 {
@@ -6,7 +7,12 @@ namespace Notebook.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            return View(TestContactList.Contacts);
         }
+
+        public async Task<IActionResult> Detail(string id)
+        {
+            return View(TestContactList.Contacts.Find(o => o.Id == id));
+        } 
     }
 }
