@@ -10,7 +10,7 @@ namespace Notebook.Data
 
         }
 
-        DbSet<Contact> Contacts { get; set; }
+        public DbSet<Contact> Contacts { get; set; }
 
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

@@ -7,7 +7,7 @@ namespace Notebook.Seed
         public static List<Contact> Contacts { get; set; } = new List<Contact>()
         {   new Contact()
             {
-                Id = "1",
+                //Id = "1",
                 Name= "Foo",
                 Surname= "Bar",
                 Patronymic = "Boo",
@@ -17,7 +17,7 @@ namespace Notebook.Seed
             },
             new Contact()
             {
-                Id = "2",
+                //Id = "2",
                 Name= "Paa",
                 Surname= "Ner",
                 Patronymic = "Ror",
@@ -27,7 +27,7 @@ namespace Notebook.Seed
             },
             new Contact()
             {
-                Id = "3",
+                //Id = "3",
                 Name= "Opp",
                 Surname= "Ruu",
                 Patronymic = "Err",
