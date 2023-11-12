@@ -2,10 +2,26 @@
 @model Contact
 
 <div class="container">
+    <h3 display="inline" class="my-3">
+        <small class="text-secondary">Id</small>
+        @Model.Id
+    </h3>
     <div class="row">
+        <div class="col-md-8">
+            <small class="text-secondary">Фамилия</small>
+            <p>@Model.Surname</p>
+            <small class="text-secondary">Имя</small>
+            <p>@Model.Name</p>
+            <small class="text-secondary">Отчество</small>
+            <p>@Model.Patronymic</p>
+        </div>
         <div class="col-md-4">
-            <h3 class="my-3">@Model.Id</h3>
-            <h3 class=""></h3>
+            <small class="text-secondary">Номер телефона</small>
+            <p>@Model.PhoneNumber</p>
+            <small class="text-secondary">Адресс</small>
+            <p>@Model.Address</p>
+            <small class="text-secondary">Адресс</small>
+            <p>@Model.Description</p>
         </div>
     </div>
 </div>
