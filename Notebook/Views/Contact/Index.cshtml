@@ -1,5 +1,5 @@
 ﻿@using Notebook.Models;
-@model List<Contact>;
+@model IEnumerable<Contact>;
 
 <div class="container">
     <div class="row">
@@ -8,12 +8,12 @@
            <div class="col">
                <div class="card shadow-sm">
                    <div class="card-header">
-                       <a class="card-text">@item.Id</a>
+                       <a class="card-text" asp-action="Detail" asp-route-id="@item.Id">@item.Id</a>
                    </div>
                    <div class="card-body">
                         <p class="card-text">@item.Surname</p>
                         <p class="card-text text-secondary">@item.Name</p>
-                        <p class="card-text text-secondary">"@item.Patronymic"</p>
+                        <p class="card-text text-secondary">@item.Patronymic</p>
                    </div>
                </div>
            </div>
