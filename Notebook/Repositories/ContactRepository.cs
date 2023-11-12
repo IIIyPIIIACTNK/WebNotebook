@@ -17,5 +17,10 @@ namespace Notebook.Repositories
         {
             return await _dbContext.Contacts.ToListAsync();
         }
+
+        public async Task<Contact> GetByIdAsync(string id)
+        {
+            return await _dbContext.Contacts.FirstOrDefaultAsync(o => o.Id == id);
+        }
     }
 }

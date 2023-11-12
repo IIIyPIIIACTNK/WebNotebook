@@ -20,7 +20,7 @@ namespace Notebook.Controllers
 
         public async Task<IActionResult> Detail(string id)
         {
-            return View();
+            return View(await _repository.GetByIdAsync(id));
         } 
     }
 }
